@@ -3,7 +3,7 @@
 // - S_ABNORMALITY_REFRESH
 // - S_START_ACTION_SCRIPT
 
-// Version 1.22 r:00
+// Version 1.22 r:01
 
 const abnormality = [
     70234, // 
