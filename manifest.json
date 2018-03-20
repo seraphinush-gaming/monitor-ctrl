@@ -1,0 +1,13 @@
+{
+  "files": {
+    "abnormality.js": "787d80f48338af647e17eb790a4a5b593c58287ce40de23e632012c490bf8992",
+    "crystal.js": "e039a7309fe27442419b5c0bf066d5e62cb254b181e35310e1d1021314ee5f65",
+    "index.js": "1acc2a31a9d3f43e6fedafd24885428e308890517e30a4c981a29bcfd4107a88",
+    "module.json": "6fa03bb607dc606c87195091de8d129ab7205faa634d460d14a5720951507d36"
+  },
+  "defs": {
+    "S_ABNORMALITY_BEGIN": 2,
+    "S_ABNORMALITY_REFRESH": 1,
+    "S_START_ACTION_SCRIPT": 3
+  }
+}
