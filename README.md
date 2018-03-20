@@ -9,6 +9,8 @@ tera-proxy module to reduce stress from screen abnormalities
 ## Changelog
 <details>
 
+    1.23
+    - Added auto-update support
     1.22
     - Initial commit
 
