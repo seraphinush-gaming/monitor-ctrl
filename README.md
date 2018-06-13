@@ -2,6 +2,7 @@
 tera-proxy module to reduce stress from screen abnormalities
 
 ## Info
+- **Support seraph via paypal donations, thanks in advance : [paypal](https://www.paypal.me/seraphinush)**
 - Blocks drunken screen abnormality
 - Blocks crystal effect refresh
 - Blocks screen zoom scripts
