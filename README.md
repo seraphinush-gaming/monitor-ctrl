@@ -10,6 +10,8 @@ tera-proxy module to reduce stress from screen abnormalities
 ## Changelog
 <details>
 
+    1.24
+    - Refactored files into `config.js`
     1.23
     - Added auto-update support
     1.22

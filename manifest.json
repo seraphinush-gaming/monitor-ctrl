@@ -1,8 +1,7 @@
 {
 	"files": {
-		"abnormality.js": "787d80f48338af647e17eb790a4a5b593c58287ce40de23e632012c490bf8992",
-		"crystal.js": "e039a7309fe27442419b5c0bf066d5e62cb254b181e35310e1d1021314ee5f65",
-		"index.js": "91c1fbc22d70e3c97db35a7d5d867ddc7914d83f4727c93e8fb8fa0fb05a8ad9",
+		"config.js": { "overwrite": false, "hash": "b268787cc4c1a64a7814aed4cadf1cf507c2960469e022fbb5cf7fe837e31a8e" },
+		"index.js": "a458faddc73dee2b8813c295a930cb31730577efccbe1bd6510a31e26468b36f",
 		"module.json": "6fa03bb607dc606c87195091de8d129ab7205faa634d460d14a5720951507d36"
 	},
 	"defs": {
