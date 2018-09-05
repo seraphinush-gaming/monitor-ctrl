@@ -10,11 +10,9 @@ module.exports = {
         999001011, // Beach Party : Watermelon mini-game
     ],
     crystal: [
-        10306, // Forcefulness VII
-        10316, // Forcefulness VII
-        12001, // Infusion VII
-        12003, // Infusion VII
-        12120, // Infusion VII
-        12130, // Infusion VII
+        // Forcefullness VII
+        10306, 10316,
+        // Infusion VII
+        12001, 12003, 12120, 12130
     ]
 }

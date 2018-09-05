@@ -1,4 +1,6 @@
 {
-    "servers": ["https://raw.githubusercontent.com/seraphinush-gaming/monitor-control/master/"],
-    "supportUrl": "https://github.com/seraphinush-gaming/monitor-control/issues"
+    "disableAutoUpdate": false,
+    "options": { "niceName": "monitor-ctrl" },
+    "servers": ["https://raw.githubusercontent.com/seraphinush-gaming/monitor-ctrl/master/"],
+    "supportUrl": "https://github.com/seraphinush-gaming/monitor-ctrl/issues"
 }

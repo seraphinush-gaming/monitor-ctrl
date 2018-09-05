@@ -1,4 +1,4 @@
-# monitor-control
+# monitor-ctrl
 tera-proxy module to reduce stress from screen abnormalities
 
 ## Info
@@ -10,6 +10,8 @@ tera-proxy module to reduce stress from screen abnormalities
 ## Changelog
 <details>
 
+    1.25
+    - Updated from `dispatch` to `mod`
     1.24
     - Refactored files into `config.js`
     1.23
