@@ -1,12 +1,16 @@
 {
 	"files": {
-		"config.js": { "overwrite": false, "hash": "6b6961fe564ca4333eed49850e86fc9bd8ec14896ff82b953a7e88c9b3968ed8" },
-		"index.js": "e94666b3ac294724d33223be803d12e6a1044783e45a27bd23dd88991d1e6427",
-		"module.json": "8e30514fe3fabbe52bbdc3221175bc31cdcde9714a413f3234c95c90aa063356",
-		"README.md": "7f9fee26f4c2905e5c46cb2a46e46e807565acc084012e41f5c0edcaa248cf06"
+		"README.md": "82385591bf28ff7e2bbfec3b52a1488d6752013094e7e7ac3e4e76ef79eee7a3",
+		"config.js": {
+			"overwrite": false,
+			"hash": "a8ed57f38f0d10e26039b9506cef6522c2fcb61eba2b46adde3fd6a9fcf56dc4"
+		},
+		"index.js": "8d040b15b0a7a4b8bb78b6315a1ceffe330fa28e1e7fe7d7e36a8ef70e74778e",
+		"module.json": "9bd3e83e29246d96525019637798b2f6a1a5bada80a28960cc3c205317534084"
 	},
 	"defs": {
-		"S_ABNORMALITY_BEGIN": [3, 2],
-		"S_ABNORMALITY_REFRESH": 1
+		"S_ABNORMALITY_BEGIN": 3,
+		"S_ABNORMALITY_REFRESH": 1,
+		"S_START_ACTION_SCRIPT": "raw"
 	}
 }
