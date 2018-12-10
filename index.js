@@ -1,4 +1,3 @@
-// Version 1.25 r:02
 'use strict';
 
 const config = require('./config.js');

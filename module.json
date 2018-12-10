@@ -1,5 +1,8 @@
 {
     "disableAutoUpdate": false,
-    "options": { "niceName": "monitor-ctrl" },
+    "name": "monitor-ctrl",
+    "author": "seraphinush",
+    "description": "tera-proxy module to reduce stress from screen abnormalities",
+    "version": "1.26.00",
     "servers": ["https://raw.githubusercontent.com/seraphinush-gaming/monitor-ctrl/master/"]
 }
