@@ -1,12 +1,12 @@
 {
 	"files": {
-		"README.md": "b2e6442ae0f3cf5008ae06a9930d2f6d5f65b400b84f403a6ba0478910df6d20",
+		"README.md": "58f74ac4833fafb5b0685b7df362f10122f16569fffa5077bd56ebabd3c6a3d0",
 		"config.js": {
-			"overwrite": false,
-			"hash": "a8ed57f38f0d10e26039b9506cef6522c2fcb61eba2b46adde3fd6a9fcf56dc4"
+			"overwrite": true,
+			"hash": "2e42a2cb2e30b01d6f85485fd4341d5af0f1cb11db1c15c2b8e45de48415500c"
 		},
-		"index.js": "c945e1d33f4b6616cd61b11892af43026743dbcd5d9170974117ac7d33a83910",
-		"module.json": "2a848fddba336eefd38eb7480336c0e9b2c22e9d3bb0a605e59cd3036395fc4b"
+		"index.js": "b3a510af1ad876eede6c9f1c9863b932ede6ea679acd742d3b667bfeffa964fc",
+		"module.json": "b6050674344b1e7b083a36ba5b26ec5ab07c362893df2ccca6a72f6d74e00cd6"
 	},
 	"defs": {
 		"S_ABNORMALITY_BEGIN": 3,
