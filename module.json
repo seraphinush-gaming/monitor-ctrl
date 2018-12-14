@@ -3,7 +3,7 @@
     "name": "monitor-ctrl",
     "author": "seraphinush",
     "description": "tera-proxy module to reduce stress from screen abnormalities",
-    "version": "1.27.00",
+    "version": "1.27.01",
     "options": {
         "reloadable": true
     },
