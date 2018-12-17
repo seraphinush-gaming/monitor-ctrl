@@ -1,12 +1,12 @@
 {
 	"files": {
-		"README.md": "58f74ac4833fafb5b0685b7df362f10122f16569fffa5077bd56ebabd3c6a3d0",
+		"README.md": "ad3652bc0816c84c4088265c6e7f844fbba15bbaf01009022d89ae2d1760cd68",
 		"config.js": {
 			"overwrite": false,
 			"hash": "2e42a2cb2e30b01d6f85485fd4341d5af0f1cb11db1c15c2b8e45de48415500c"
 		},
-		"index.js": "b3a510af1ad876eede6c9f1c9863b932ede6ea679acd742d3b667bfeffa964fc",
-		"module.json": "dbead3714e1c013a2f1efbd54f60d4a3b746f8166730d43e5075548e255588bb"
+		"index.js": "eb0fe05030dfc728a2f6b20a6a541b5da471edfed43657615f853c2ecda2e032",
+		"module.json": "f1514e4bace4518d87798b4969af3401dc4f54037bbc0d6594dd903b840f8e7b"
 	},
 	"defs": {
 		"S_ABNORMALITY_BEGIN": 3,

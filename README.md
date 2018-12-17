@@ -15,6 +15,8 @@ Support seraph via paypal donations, thanks in advance !
 ## Changelog
 <details>
 
+    1.28
+    - Added hot-reload support
     1.27
     - Updated config.js for patch 77
     1.26
