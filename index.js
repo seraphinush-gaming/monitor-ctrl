@@ -19,7 +19,7 @@ module.exports = function MonitorCtrl(mod) {
     // block crystal effect refresh
     mod.hook('S_ABNORMALITY_REFRESH', 1, (e) => {
         if (config.crystal.includes(e.id))
-            return flag;
+            return !flag;
     });
 
     // block screen zoom scripts
