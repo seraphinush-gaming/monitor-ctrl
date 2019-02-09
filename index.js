@@ -25,4 +25,14 @@ module.exports = function MonitorCtrl(mod) {
     // block screen zoom scripts
     mod.hook('S_START_ACTION_SCRIPT', 'raw', () => false );
 
+    mod.hook('S_FIELD_EVENT_ON_ENTER', 'raw', () => {
+        setTimeout(() => {
+            mod.send('S_AERO', 1, {
+                enabled: true,
+                blendTime: 1,
+                aeroSet: "S1EngineResources.DefaultAero"
+            })
+        }, 2000);
+    });
+
 }

@@ -5,16 +5,19 @@ Support seraph via paypal donations, thanks in advance !
 ```
 
 ## Auto-update guide
-- Create a folder called `monitor-ctrl` in `tera-proxy/mods` and download >> [`module.json`](https://raw.githubusercontent.com/seraphinush-gaming/monitor-ctrl/master/module.json) << (right-click this link and save as..) into the folder
+- Create a folder called `monitor-ctrl` in `tera-proxy/mods` and download >> [`module.json`](https://raw.githubusercontent.com/seraphinush-gaming/monitor-ctrl/master/module.json) << (right-click this link and save link as..) into the folder
 
 ## Info
 - Blocks drunken screen abnormality
 - Blocks crystal effect refresh
 - Blocks screen zoom scripts
+- Replaces forced sky change in Guardian Legion mission
 
 ## Changelog
 <details>
 
+    1.29
+    - Added forced sky change replacement
     1.28
     - Added hot-reload support
     1.27
