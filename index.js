@@ -25,7 +25,7 @@ module.exports = function MonitorCtrl(mod) {
     // block screen zoom scripts
     mod.hook('S_START_ACTION_SCRIPT', 'raw', () => false );
 
-    mod.hook('S_FIELD_EVENT_ON_ENTER', 'raw', () => {
+    let _ = mod.tryHook('S_FIELD_EVENT_ON_ENTER', 'raw', () => {
         setTimeout(() => {
             mod.send('S_AERO', 1, {
                 enabled: true,
@@ -34,5 +34,9 @@ module.exports = function MonitorCtrl(mod) {
             })
         }, 2000);
     });
+
+    if (_ === null) {
+        console.log('Unmapped protocol packet \<S_FIELD_EVENT_ON_ENTER\>.');
+    }
 
 }
