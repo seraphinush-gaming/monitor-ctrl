@@ -1,16 +1,15 @@
 {
 	"files": {
-		"README.md": "57ae1f9dc5d6ff2cdc4c3fd1573c5f9dc1be7dd65263ead7f75b3263d3eb122a",
+		"README.md": "61f4d8c5694290fc3e98015758bafd8fcb83fdc999a4d0e169a35ea9ebf0e89c",
 		"config.js": {
 			"overwrite": false,
 			"hash": "e1e84037f565e9c097beefd1ad39efcee438ce41a97f2a9ad1702ae240e783ed"
 		},
-		"index.js": "1e2f50ee0dd74e91af8e240c842a49b1dac5163d88870057c3d1be663388b869",
-		"module.json": "218b481d14e7bd07eca409342a1822200304f4a83bf84d2226ba4067f9398b6b"
+		"index.js": "b65e2ee55d4c7803bdf5ef39a3cf35084fdab48132cb2dd4381b50f3bb349597",
+		"module.json": "9dcd59cc77242844bfbecb0d4b24d7de492436a054f5c9d700b0f3f45e66c300"
 	},
 	"defs": {
 		"S_ABNORMALITY_BEGIN": 3,
-		"S_ABNORMALITY_REFRESH": 1,
 		"S_AERO": 1,
 		"S_FIELD_EVENT_ON_ENTER": "raw",
 		"S_START_ACTION_SCRIPT": "raw"

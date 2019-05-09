@@ -15,13 +15,14 @@ Support seraph via paypal donations, thanks in advance !
 
 ## Info
 - Blocks drunken screen abnormality
-- Blocks crystal effect refresh
 - Blocks screen zoom scripts
 - Replaces forced sky change in Guardian Legion mission
 
 ## Changelog
 <details>
 
+    1.30
+    - Removed crystal refresh effect block
     1.29
     - Added forced sky change replacement
     1.28
