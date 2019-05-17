@@ -4,45 +4,40 @@
 </a>
 </p>
 
-# auto-qol [![paypal](https://img.shields.io/badge/paypal-donate-333333.svg?colorA=253B80&colorB=333333)](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=B7QQJZV9L5P2J&source=url) [![paypal.me](https://img.shields.io/badge/paypal.me-donate-333333.svg?colorA=169BD7&colorB=333333)](https://www.paypal.me/seraphinush)
-tera-toolbox compilation module for automated functions
+# monitor-ctrl [![paypal](https://img.shields.io/badge/paypal-donate-333333.svg?colorA=253B80&colorB=333333)](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=B7QQJZV9L5P2J&source=url) [![paypal.me](https://img.shields.io/badge/paypal.me-donate-333333.svg?colorA=169BD7&colorB=333333)](https://www.paypal.me/seraphinush)
+tera-toolbox module to reduce stress from screen abnormalities
 ```
 Support seraph via paypal donations, thanks in advance !
 ```
 
 ## Auto-update guide
-- Create a folder called `auto-qol` in `tera-toolbox/mods` and download >> [`module.json`](https://raw.githubusercontent.com/seraphinush-gaming/auto-qol/master/module.json) << (right-click this link and save link as..) into the folder
-
-## Usage
-- __auto-cutscene : `skip`__
-  - Toggle on/off
-
-## Config
-- __`enableCutscene`__
-  - Initialize skip movie function on/off
-  - Default is `true`
+- Create a folder called `monitor-ctrl` in `tera-toolbox/mods` and download >> [`module.json`](https://raw.githubusercontent.com/seraphinush-gaming/monitor-ctrl/master/module.json) << (right-click this link and save link as..) into the folder
 
 ## Info
-- Code schematic based on [`tera-game-state`](https://github.com/caali-hackerman/tera-game-state)
-- Compiled modules :
-  - `auto-cutscene` (mod. by [baldera-mods](https://github.com/baldera-mods), branch [seraphinush-gaming](https://github.com/ylennia-archives/auto-cutscene))
-  - `auto-daily-reward-credits` (mod. by [teralove](https://github.com/teralove))
-  - `auto-inspect` (branch [seraphinush-gaming](https://github.com/ylennia-archives/auto-inspect))
+- Blocks drunken screen abnormality
+- Blocks screen zoom scripts
+- Replaces forced sky change in Guardian Legion mission
 
 ## Changelog
 <details>
 
-    2.04
+    1.30
+    - Removed crystal refresh effect block
+    1.29
+    - Added forced sky change replacement
+    1.28
     - Added hot-reload support
-    2.03
-    - Removed `tera-game-state` usage
-    2.02
-    - Added `auto-daily-credit` submodule
-    2.01
+    1.27
+    - Updated config.js for patch 77
+    1.26
     - Updated for caali-proxy-nextgen
-    2.00
-    - Refactored into submodules
-    1.00
+    1.25
+    - Updated from `dispatch` to `mod`
+    1.24
+    - Refactored files into `config.js`
+    1.23
+    - Added auto-update support
+    1.22
     - Initial commit
 
 </details>
