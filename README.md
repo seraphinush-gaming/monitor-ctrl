@@ -21,6 +21,8 @@ Support seraph via paypal donations, thanks in advance !
 ## Changelog
 <details>
 
+    1.31
+    - Added settings-migrator support
     1.30
     - Removed crystal refresh effect block
     1.29

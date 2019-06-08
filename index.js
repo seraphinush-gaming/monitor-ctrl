@@ -1,12 +1,10 @@
 'use strict';
 
-const config = require('./config.js');
-
 module.exports = function MonitorCtrl(mod) {
 
   // block drunken screen abnomality
   mod.hook('S_ABNORMALITY_BEGIN', 3, (e) => {
-    if (config.abnormality.includes(e.id)) {
+    if (mod.settings.abnormality.includes(e.id)) {
       return false;
     }
   });
@@ -23,7 +21,7 @@ module.exports = function MonitorCtrl(mod) {
       })
     }, 2000);
   });
-  if (_ === null) {
+  if (!_) {
     console.log('Unmapped protocol packet \<S_FIELD_EVENT_ON_ENTER\>.');
   }
 
