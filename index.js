@@ -22,7 +22,7 @@ module.exports = function MonitorCtrl(mod) {
     }, 2000);
   });
   if (!_) {
-    console.log('Unmapped protocol packet \<S_FIELD_EVENT_ON_ENTER\>.');
+    mod.warn('Unmapped protocol packet \<S_FIELD_EVENT_ON_ENTER\>.');
   }
 
 }
