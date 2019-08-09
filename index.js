@@ -17,7 +17,7 @@ module.exports = function MonitorCtrl(mod) {
       mod.trySend('S_AERO', 1, {
         enabled: true,
         blendTime: 1,
-        aeroSet: "S1EngineResources.DefaultAero"
+        aeroSet: "ab1_aeroset.AERO.DST_AB1_AERO"
       })
     }, 2000);
   });
