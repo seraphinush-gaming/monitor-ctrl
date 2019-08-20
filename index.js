@@ -12,6 +12,7 @@ module.exports = function MonitorCtrl(mod) {
   // block screen zoom scripts
   mod.hook('S_START_ACTION_SCRIPT', 'raw', () => false);
 
+  // replace forced sky change in glm
   let _ = mod.tryHook('S_FIELD_EVENT_ON_ENTER', 'raw', () => {
     setTimeout(() => {
       mod.trySend('S_AERO', 1, {
@@ -24,5 +25,12 @@ module.exports = function MonitorCtrl(mod) {
   if (!_) {
     mod.warn('Unmapped protocol packet \<S_FIELD_EVENT_ON_ENTER\>.');
   }
+
+  // block unnecessary spawns of fish aesthetics
+  mod.hook('S_SPAWN_NPC', 11, { order: 10 }, (e) => {
+    if (e.npcName === '투명NPC_낚시_물고기표현') {
+      return false;
+    }
+  });
 
 }

@@ -1,14 +1,15 @@
 {
 	"files": {
-		"README.md": "2057aa7d106ea37f92dcff7cfa1916598120301e3becba4a741c454326d5e062",
-		"index.js": "aba9e20126af35bd3c58edd5ffe785e8c2c5ee48590b0d4407226fbe6819e05a",
-		"module.json": "d759e002206fea3c96806e2938a1f327c5c4c8adc020f6c89f5983caa27e5164",
+		"README.md": "c945ce0882ff6640d4adb1cadfe33dd0e1ac0cdd20c62e2bfd45ac784f061a77",
+		"index.js": "0cae4df0519bd11d94dd108b2500b807a88127dc8051b7e7fdb5decb170eae41",
+		"module.json": "54720c83612ca4a54623265957de76c2a052afe7a07d76ba308202b442bba9be",
 		"settings.js": "629b18b7848d9e6462bc2570f651092716442912b6368bc063d36fbdd8fb7075"
 	},
 	"defs": {
 		"S_ABNORMALITY_BEGIN": 3,
 		"S_AERO": 1,
 		"S_FIELD_EVENT_ON_ENTER": "raw",
+		"S_SPAWN_NPC": 11,
 		"S_START_ACTION_SCRIPT": "raw"
 	}
 }

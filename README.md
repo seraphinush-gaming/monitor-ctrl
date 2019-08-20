@@ -16,11 +16,14 @@ Support seraph via paypal donations, thanks in advance !
 ## Info
 - Blocks drunken screen abnormality
 - Blocks screen zoom scripts
+- Blocks unnecessary spawns of fish aesthetics
 - Replaces forced sky change in Guardian Legion mission
 
 ## Changelog
 <details>
 
+    1.32
+    - Added fish aesthetic spawn block
     1.31
     - Added settings-migrator support
     1.30
