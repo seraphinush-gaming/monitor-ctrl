@@ -22,6 +22,8 @@ Support seraph via paypal donations, thanks in advance !
 ## Changelog
 <details>
 
+    2.00
+    - Update module as class export
     1.32
     - Added fish aesthetic spawn block
     1.31
