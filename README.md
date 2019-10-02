@@ -13,7 +13,15 @@ Support seraph via paypal donations, thanks in advance !
 ## Auto-update guide
 - Create a folder called `monitor-ctrl` in `tera-toolbox/mods` and download >> [`module.json`](https://raw.githubusercontent.com/seraphinush-gaming/monitor-ctrl/master/module.json) << (right-click this link and save link as..) into the folder
 
+## Usage
+- __`ctrl`__
+### Arguments
+- __`shake`__
+  - Toggle camera shake on/off
+  - Default camera shake setting is 30% power, 30% speed
+
 ## Info
+- Blocks camera shake
 - Blocks drunken screen abnormality
 - Blocks screen zoom scripts
 - Blocks unnecessary spawns of fish aesthetics
@@ -22,6 +30,10 @@ Support seraph via paypal donations, thanks in advance !
 ## Changelog
 <details>
 
+    2.01
+    - Added camera shake block
+    - Added `ctrl` command
+    - Added `shake` option
     2.00
     - Update module as class export
     1.32

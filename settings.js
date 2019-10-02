@@ -9,7 +9,8 @@ const DefaultSettings = {
     776017, 806001, 806002, 811061, 821101, 905656, 905657,
     7102001, 45000011, 45000012, 47660800, 47660900, 47661000, 47662300,
     999001011
-  ]
+  ],
+  "enableShake": false
 };
 
 function MigrateSettings(from_ver, to_ver, settings) {

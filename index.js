@@ -5,6 +5,20 @@ class MonitorCtrl {
   constructor(mod) {
 
     this.mod = mod;
+    this.cmd = mod.command;
+    this.settings = mod.settings;
+
+    // command
+    this.cmd.add('ctrl', {
+      'shake': () => {
+        this.settings.enableShake = !this.settings.enableShake;
+        this.setCameraShake();
+        this.send(`Camera shake ${this.settings.enableShake ? 'en' : 'dis'}abled.`);
+      },
+      '$default': () => {
+        this.send(`Invalid argument. usage : ctrl [shake]`);
+      }
+    });
 
     // code
     // block drunken screen abnomality
@@ -38,7 +52,15 @@ class MonitorCtrl {
       }
     });
 
+    // block camera shake
+    this.setCameraShake();
+
   }
+
+  // helper
+  setCameraShake() { this.mod.clientInterface.configureCameraShake(this.settings.enableShake, 0.3, 0.3); }
+
+  send() { this.cmd.message(': ' + [...arguments].join('\n\t - ')); }
 
 }
 

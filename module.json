@@ -6,11 +6,11 @@
     "name": "monitor-ctrl",
     "options": {
         "reloadable": true,
-        "settingsVersion": 1,
+        "settingsVersion": 3,
         "settingsFile": "config.json",
         "settingsMigrator": "settings.js"
     },
     "servers": ["https://raw.githubusercontent.com/seraphinush-gaming/monitor-ctrl/master/"],
     "supportUrl": "https://github.com/seraphinush-gaming/monitor-ctrl/blob/master/README.md",
-    "version": "2.00.00"
+    "version": "2.01.00"
 }
