@@ -2,8 +2,8 @@
 	"files": {
 		"README.md": "3fcf024bfd2100cdc87bf86832adc54ad24318738f77b97b7cac481bb23caa02",
 		"index.js": "7d213648894c2942349a39dffd351ab48b3ed3eaada1615fb4d845f8113fc645",
-		"module.json": "80cb3b15da03f99596752ffbf60bd1244b4c02a561cf672acfb62bfe4f5dcc4d",
-		"settings.js": "ba027d5c63f698dfb7508cfba6a59910e55196425501ba2ee7e886dbe1ab2064"
+		"module.json": "355fa9e4fab63bffa76b2925af2facfe404273a51bf70d4ad56b82df7cc2a9c5",
+		"settings.js": "840579c830c8b01556d434473228ed5633d42404a675c6b60d01ac02199ff3b5"
 	},
 	"defs": {
 		"S_ABNORMALITY_BEGIN": 3,

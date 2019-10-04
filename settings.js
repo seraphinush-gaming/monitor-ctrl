@@ -25,7 +25,8 @@ function MigrateSettings(from_ver, to_ver, settings) {
     }
   
     switch (to_ver) {
-      //
+      case 2:
+        settings.enableShake = false;
     }
 
     return settings;

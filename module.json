@@ -1,7 +1,7 @@
 {
     "author": "seraphinush",
     "description": "tera-toolbox module to reduce stress from screen abnormalities",
-    "disableAutoUpdate": false,
+    "disableAutoUpdate": true,
     "donationUrl": "https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=B7QQJZV9L5P2J&source=url",
     "name": "monitor-ctrl",
     "options": {
@@ -12,5 +12,5 @@
     },
     "servers": ["https://raw.githubusercontent.com/seraphinush-gaming/monitor-ctrl/master/"],
     "supportUrl": "https://github.com/seraphinush-gaming/monitor-ctrl/blob/master/README.md",
-    "version": "2.01.00"
+    "version": "2.01.01"
 }
