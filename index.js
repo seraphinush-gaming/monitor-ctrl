@@ -1,19 +1,19 @@
 'use strict';
 
-class MonitorCtrl {
+class monitor_ctrl {
 
   constructor(mod) {
 
-    this.mod = mod;
-    this.cmd = mod.command;
-    this.settings = mod.settings;
+    this.m = mod;
+    this.c = mod.command;
+    this.s = mod.settings;
 
     // command
-    this.cmd.add('ctrl', {
+    this.c.add('ctrl', {
       'shake': () => {
-        this.settings.enableShake = !this.settings.enableShake;
-        this.setCameraShake();
-        this.send(`Camera shake ${this.settings.enableShake ? 'en' : 'dis'}abled.`);
+        this.s.enableShake = !this.s.enableShake;
+        this.set_camera_shake();
+        this.send(`Camera shake ${this.s.enableShake ? 'en' : 'dis'}abled.`);
       },
       '$default': () => {
         this.send(`Invalid argument. usage : ctrl [shake]`);
@@ -22,19 +22,18 @@ class MonitorCtrl {
 
     // code
     // block drunken screen abnomality
-    this.mod.hook('S_ABNORMALITY_BEGIN', 3, (e) => {
-      if (this.mod.settings.abnormality.includes(e.id)) {
+    this.m.hook('S_ABNORMALITY_BEGIN', 3, (e) => {
+      if (this.m.settings.abnormality.includes(e.id))
         return false;
-      }
     });
 
     // block screen zoom scripts
-    this.mod.hook('S_START_ACTION_SCRIPT', 'raw', () => false);
+    this.m.hook('S_START_ACTION_SCRIPT', 'raw', () => false);
 
     // replace forced sky change in glm
-    let _ = this.mod.tryHook('S_FIELD_EVENT_ON_ENTER', 'raw', () => {
-      this.mod.setTimeout(() => {
-        this.mod.trySend('S_AERO', 1, {
+    let _ = this.m.tryHook('S_FIELD_EVENT_ON_ENTER', 'raw', () => {
+      this.m.setTimeout(() => {
+        this.m.trySend('S_AERO', 1, {
           enabled: true,
           blendTime: 1,
           aeroSet: "ab1_aeroset.AERO.DST_AB1_AERO"
@@ -42,26 +41,29 @@ class MonitorCtrl {
       }, 2000);
     });
     if (!_) {
-      this.mod.warn('Unmapped protocol packet \<S_FIELD_EVENT_ON_ENTER\>.');
+      this.m.warn('Unmapped protocol packet \<S_FIELD_EVENT_ON_ENTER\>.');
     }
 
     // block unnecessary spawns of fish aesthetics
-    this.mod.hook('S_SPAWN_NPC', 11, { order: 10 }, (e) => {
-      if (e.npcName === '투명NPC_낚시_물고기표현') {
+    this.m.hook('S_SPAWN_NPC', 11, { order: 10 }, (e) => {
+      if (e.npcName === '투명NPC_낚시_물고기표현')
         return false;
-      }
     });
 
     // block camera shake
-    this.setCameraShake();
+    this.set_camera_shake();
 
   }
 
-  // helper
-  setCameraShake() { this.mod.clientInterface.configureCameraShake(this.settings.enableShake, 0.3, 0.3); }
+  destructor() {
+    this.c.remove('ctrl');
+  }
 
-  send() { this.cmd.message(': ' + [...arguments].join('\n\t - ')); }
+  // helper
+  set_camera_shake() { this.m.clientInterface.configureCameraShake(this.s.enableShake, 0.3, 0.3); }
+
+  send() { this.c.message(': ' + [...arguments].join('\n\t - ')); }
 
 }
 
-module.exports = MonitorCtrl;
+module.exports = monitor_ctrl;
