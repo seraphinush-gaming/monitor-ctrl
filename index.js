@@ -12,7 +12,9 @@ class monitor_ctrl {
     this.c.add('ctrl', {
       'shake': () => {
         this.s.enableShake = !this.s.enableShake;
-        this.set_camera_shake();
+        // temporary
+        if (this.m.region !== 'na')
+          this.set_camera_shake();
         this.send(`Camera shake ${this.s.enableShake ? 'en' : 'dis'}abled.`);
       },
       '$default': () => {
