@@ -12,9 +12,7 @@ class monitor_ctrl {
     this.c.add('ctrl', {
       'shake': () => {
         this.s.enableShake = !this.s.enableShake;
-        // temporary
-        if (this.m.region !== 'na')
-          this.set_camera_shake();
+        this.set_camera_shake();
         this.send(`Camera shake ${this.s.enableShake ? 'en' : 'dis'}abled.`);
       },
       '$default': () => {
@@ -30,10 +28,10 @@ class monitor_ctrl {
     });
 
     // block screen zoom scripts
-    this.m.hook('S_START_ACTION_SCRIPT', 'raw', () => false);
+    this.m.hook('S_START_ACTION_SCRIPT', 'event', () => false);
 
     // replace forced sky change in glm
-    let _ = this.m.tryHook('S_FIELD_EVENT_ON_ENTER', 'raw', () => {
+    let _ = this.m.tryHook('S_FIELD_EVENT_ON_ENTER', 'event', () => {
       this.m.setTimeout(() => {
         this.m.trySend('S_AERO', 1, {
           enabled: true,
@@ -42,9 +40,7 @@ class monitor_ctrl {
         })
       }, 2000);
     });
-    if (!_) {
-      this.m.warn('Unmapped protocol packet \<S_FIELD_EVENT_ON_ENTER\>.');
-    }
+    !_ ? this.m.warn('Unmapped protocol packet \<S_FIELD_EVENT_ON_ENTER\>.') : null;
 
     // block unnecessary spawns of fish aesthetics
     this.m.hook('S_SPAWN_NPC', 11, { order: 10 }, (e) => {
