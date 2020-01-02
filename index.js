@@ -11,9 +11,9 @@ class monitor_ctrl {
     // command
     this.c.add('ctrl', {
       'shake': () => {
-        this.s.enableShake = !this.s.enableShake;
+        this.s.enable_shake = !this.s.enable_shake;
         this.set_camera_shake();
-        this.send(`Camera shake ${this.s.enableShake ? 'en' : 'dis'}abled.`);
+        this.send(`Camera shake ${this.s.enable_shake ? 'en' : 'dis'}abled.`);
       },
       '$default': () => {
         this.send(`Invalid argument. usage : ctrl [shake]`);
@@ -35,12 +35,12 @@ class monitor_ctrl {
       this.m.setTimeout(() => {
         this.m.trySend('S_AERO', 1, {
           enabled: true,
-          blendTime: 1,
+          blendTime: 5,
           aeroSet: "ab1_aeroset.AERO.DST_AB1_AERO"
         })
       }, 2000);
     });
-    !_ ? this.m.warn('Unmapped protocol packet \<S_FIELD_EVENT_ON_ENTER\>.') : null;
+    !_ ? this.m.warn(`Unmapped protocol packet \<S_FIELD_EVENT_ON_ENTER\>.`) : null;
 
     // block unnecessary spawns of fish aesthetics
     this.m.hook('S_SPAWN_NPC', 11, { order: 10 }, (e) => {
@@ -58,9 +58,9 @@ class monitor_ctrl {
   }
 
   // helper
-  set_camera_shake() { this.m.clientInterface.configureCameraShake(this.s.enableShake, 0.3, 0.3); }
+  set_camera_shake() { this.m.clientInterface.configureCameraShake(this.s.enable_shake, 0.3, 0.3); }
 
-  send() { this.c.message(': ' + [...arguments].join('\n\t - ')); }
+  send() { this.c.message(': ' + [...arguments].join('\n - ')); }
 
 }
 

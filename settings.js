@@ -10,7 +10,7 @@ const DefaultSettings = {
     7102001, 45000011, 45000012, 47660800, 47660900, 47661000, 47662300,
     999001011
   ],
-  "enableShake": false
+  "enable_shake": false
 };
 
 function MigrateSettings(from_ver, to_ver, settings) {
@@ -27,6 +27,11 @@ function MigrateSettings(from_ver, to_ver, settings) {
     switch (to_ver) {
       case 2:
         settings.enableShake = false;
+        break;
+      case 4:
+        settings.enable_shake = settings.enableShake;
+        delete settings.enableShake;
+        break;
     }
 
     return settings;
