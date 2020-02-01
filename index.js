@@ -40,11 +40,11 @@ class monitor_ctrl {
         })
       }, 2000);
     });
-    !_ ? this.m.warn(`Unmapped protocol packet \<S_FIELD_EVENT_ON_ENTER\>.`) : null;
+    !_ ? this.m.log(`Unmapped protocol packet \<S_FIELD_EVENT_ON_ENTER\>.`) : null;
 
     // block unnecessary spawns of fish aesthetics
     this.m.hook('S_SPAWN_NPC', 11, { order: 10 }, (e) => {
-      if (e.npcName === '투명NPC_낚시_물고기표현')
+      if (e.templateId === 9901 && e.walkSpeed == 0 && e.runSpeed == 0)
         return false;
     });
 
