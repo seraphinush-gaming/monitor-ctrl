@@ -10,7 +10,7 @@
         "settingsFile": "config.json",
         "settingsMigrator": "settings.js"
     },
-    "servers": ["https://raw.githubusercontent.com/seraphinush-gaming/monitor-ctrl/master/"],
-    "supportUrl": "https://github.com/seraphinush-gaming/monitor-ctrl/blob/master/README.md",
-    "version": "2.01.07"
+    "servers": ["https://raw.githubusercontent.com/ylennia-archives/monitor-ctrl/master/"],
+    "supportUrl": "https://github.com/ylennia-archive/monitor-ctrl/blob/master/README.md",
+    "version": "2.01.08"
 }
